@@ -11,22 +11,22 @@ function App() {
       <Welcom/>
       <div className="posts">
         
-             
+      <CardGroup/>
   {
           Data.map(book=>{
             return (
           <Card>
           <Card.Img variant="top" src={book.img} style={{ width: '10rem' }}/>
           <Card.Body>
-            <Card.Title>Card title</Card.Title>
+            <Card.Title>{book.title}</Card.Title>
             <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.
+              price: {book.price}€ <br/>
+              category: {book.category}
             </Card.Text>
           </Card.Body>
         </Card>
             )})}          
-         
+         <CardGroup/>
             
 
         
