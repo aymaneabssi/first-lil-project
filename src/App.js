@@ -4,6 +4,7 @@ import Welcom from './conpoments/Welcom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card,CardGroup} from 'react-bootstrap';
 import Data from './data.json';
+import Footer from './conpoments/footer';
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,7 @@ function App() {
   {
           Data.map(book=>{
             return (
-          <Card>
+          <Card className="d-inline">
           <Card.Img variant="top" src={book.img} style={{ width: '10rem' }}/>
           <Card.Body>
             <Card.Title>{book.title}</Card.Title>
@@ -27,10 +28,8 @@ function App() {
         </Card>
             )})}          
          <CardGroup/>
-            
-
-        
       </div>
+              <Footer className="Footer"/>
     </div>
   );
 }

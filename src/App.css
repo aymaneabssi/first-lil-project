@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+.Footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: linear-gradient(120deg, #7b65f6 0%, #6cf88a 100%);
+    color: white;
+    text-align: center
+  
+  
+}
